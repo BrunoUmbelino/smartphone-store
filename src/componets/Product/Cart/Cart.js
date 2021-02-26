@@ -7,7 +7,7 @@ import CartList from "./CartList";
 import { useSelector } from "react-redux";
 import CartTotalValue from "./CartTotalValue";
 
-function Cart() {
+function Cart(props) {
   const cart = useSelector((state) => state.store.cart);
   const cartEmpty = cart.length <= 0;
 
@@ -20,7 +20,7 @@ function Cart() {
           <Title>Cart</Title>
           <CartCollums />
           <CartList cart={cart} />
-          <CartTotalValue cart={cart} />
+          <CartTotalValue cart={cart} history={props.history} />
         </React.Fragment>
       )}
     </div>

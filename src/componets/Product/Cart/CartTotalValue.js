@@ -2,8 +2,9 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { clearCart } from "../../../redux/storeSlice";
+import Paypal from "./Paypal";
 
-function CartTotalValue({ cart }) {
+function CartTotalValue({ cart, history }) {
   const dispatch = useDispatch();
   const paymentFee = useSelector((state) => state.store.paymentFee);
   const subTotalValue = cart
@@ -35,6 +36,11 @@ function CartTotalValue({ cart }) {
             <span className="text-title">total value: </span>
             <strong>$ {totalValue}</strong>
           </h4>
+          <Paypal
+            totalValue={totalValue}
+            clearCart={clearCart}
+            history={history}
+          />
         </div>
       </div>
     </div>
