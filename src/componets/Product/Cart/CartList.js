@@ -1,0 +1,16 @@
+import React from "react";
+import CartItem from "./CartItem";
+
+function CartList({ cart }) {
+  console.log(cart);
+
+  return (
+    <div className="container-fluid">
+      {cart.map((product) => {
+        return <CartItem key={product.id} product={product} />;
+      })}
+    </div>
+  );
+}
+
+export default CartList;
