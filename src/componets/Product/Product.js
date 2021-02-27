@@ -7,7 +7,7 @@ import {
   addToCart,
   toggleModal,
   setCurrentProduct,
-} from "../../redux/storeSlice";
+} from "../../state/storeSlice";
 
 function Product(props) {
   const { id, title, img, price, inCart } = props.product;

@@ -5,7 +5,7 @@ import {
   incrementProduct,
   decrementProduct,
   removeItem,
-} from "../../../redux/storeSlice";
+} from "../../../state/storeSlice";
 
 function CartItem({ product }) {
   const dispatch = useDispatch();

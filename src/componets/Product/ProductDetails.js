@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SecondaryButton } from "../App/Button";
-import { addToCart } from "../../redux/storeSlice";
+import { SecondaryButton } from "../Until/Button";
+import { addToCart } from "../../state/storeSlice";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import CartCollums from "./CartCollumns";
-import Title from "../../App/Title";
+import Title from "../../Until/Title";
 import EmptyCart from "./EmptyCart";
 import CartList from "./CartList";
 import { useSelector } from "react-redux";

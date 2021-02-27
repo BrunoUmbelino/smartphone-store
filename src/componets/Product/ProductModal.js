@@ -1,9 +1,9 @@
 import React from "react";
-import { SecondaryButton } from "./Button";
+import { SecondaryButton } from "../Until/Button";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleModal } from "../../redux/storeSlice";
+import { toggleModal } from "../../state/storeSlice";
 
 function Modal() {
   const modalOpen = useSelector((state) => state.store.modalOpen);

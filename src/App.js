@@ -3,12 +3,12 @@ import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
-import Default from "./componets/App/Default";
-import Navbar from "./componets/App/Navbar";
+import Default from "./componets/Until/Default";
+import Navbar from "./componets/Until/Navbar";
 import Cart from "./componets/Product/Cart/Cart";
 import ProductDetails from "./componets/Product/ProductDetails";
 import ProductList from "./componets/Product/ProductList";
-import Modal from "./componets/App/Modal";
+import Modal from "./componets/Product/ProductModal";
 
 function App() {
   return (
