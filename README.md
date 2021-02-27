@@ -5,7 +5,7 @@ link: https://smartphone-store.netlify.app
 A simple and elegant mobile phone store.
 
 ### Motivation 
-This project is a fictional virtual store, with the purposo of learning the technologies used.
+This project is a fictional virtual store, with the purpose of learning the technologies used.
 
 ### Technologies
 - React (Functional Components, Styled Components)
