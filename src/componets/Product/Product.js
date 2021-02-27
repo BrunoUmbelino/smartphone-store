@@ -62,7 +62,7 @@ function Product(props) {
 const ProductWrapper = styled.div`
   .card {
     border-color: transparent;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
   }
   .card__footer {
     background: transparent;
@@ -71,7 +71,7 @@ const ProductWrapper = styled.div`
   &:hover {
     .card {
       border: 0.5px solid lightgray;
-      box-shadow: 2px 2px 5px 0px lightgray;
+      box-shadow: 2px 2px 5px 0px var(--dark);
     }
     .card__footer {
       background: lightgray;
@@ -83,7 +83,7 @@ const ProductWrapper = styled.div`
     overflow: hidden;
 
     &:hover .card__img {
-      transition: all 1s linear;
+      transition: all 0.5s linear;
       transform: scale(1.2);
     }
   }
