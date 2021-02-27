@@ -37,7 +37,7 @@ function CartTotalValue({ cart, history }) {
           </h4>
           <Paypal
             totalValue={totalValue}
-            clearCart={clearCart}
+            clearCart={() => dispatch(clearCart())}
             history={history}
           />
         </div>
