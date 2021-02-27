@@ -4,7 +4,7 @@ link: https://smartphone-store.netlify.app
 ### Description
 A simple and elegant mobile phone store.
 
-### Inspiration 
+### Motivation 
 This project is a fictional virtual store, with the purposo of learning the technologies used.
 
 ### Technologies
