@@ -17,7 +17,10 @@ function Cart(props) {
         <EmptyCart />
       ) : (
         <React.Fragment>
-          <Title>Cart</Title>
+          <div className="pt-2 pb-4">
+            <Title>Cart</Title>
+          </div>
+
           <CartCollums />
           <CartList cart={cart} />
           <CartTotalValue cart={cart} history={props.history} />

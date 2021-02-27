@@ -85,7 +85,7 @@ const storeProducts = [
   },
   {
     id: 7,
-    title: "Xiaomi Redmi Note 9 Pro",
+    title: "Xiaomi Redmi Note 9",
     model:
       'Xiaomi Redmi Note 9 Pro 128GB + 6GB RAM, 6.67" FHD+ DotDisplay, 64MP AI Quad Camera, Qualcomm Snapdragon 720G LTE Factory Unlocked Smartphone - International Version (Interstellar Grey)',
     img: "img/xiaomi-redmi-note9.jpg",

@@ -5,7 +5,7 @@ const initialState = {
   products: [...storeProducts],
   cart: [],
   currentProduct: {},
-  paymentFee: 1.59,
+  deliveryFee: 8.5,
   modalOpen: false,
 };
 
@@ -15,14 +15,14 @@ const storeSlice = createSlice({
   reducers: {
     addToCart(state, action) {
       const id = action.payload;
-      const localProduct = state.products.find((product) => product.id == id);
+      const localProduct = state.products.find((product) => product.id === id);
 
       localProduct.inCart = true;
       localProduct.count += 1;
       localProduct.total += localProduct.price;
 
       state.products = state.products.map((product) => {
-        if (product.id == id) return localProduct;
+        if (product.id === id) return localProduct;
         else return product;
       });
 
@@ -31,12 +31,12 @@ const storeSlice = createSlice({
     },
     setCurrentProduct(state, action) {
       const id = action.payload;
-      const localProduct = state.products.find((product) => product.id == id);
+      const localProduct = state.products.find((product) => product.id === id);
       state.currentProduct = localProduct;
     },
     incrementProduct(state, action) {
       const id = action.payload;
-      const localProduct = state.products.find((product) => product.id == id);
+      const localProduct = state.products.find((product) => product.id === id);
       localProduct.count += 1;
       localProduct.total += localProduct.price;
 
@@ -47,7 +47,7 @@ const storeSlice = createSlice({
     },
     decrementProduct(state, action) {
       const id = action.payload;
-      const localProduct = state.products.find((product) => product.id == id);
+      const localProduct = state.products.find((product) => product.id === id);
 
       if (localProduct.count > 1) {
         localProduct.count -= 1;
@@ -61,7 +61,7 @@ const storeSlice = createSlice({
     },
     removeItem(state, action) {
       let id = action.payload;
-      state.cart = state.cart.filter((product) => product.id != id);
+      state.cart = state.cart.filter((product) => product.id !== id);
       state.products = state.products.map((product) => {
         if (product.id === id) return { ...product, inCart: false };
         else return product;

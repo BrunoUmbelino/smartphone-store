@@ -1,16 +1,15 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { clearCart } from "../../../redux/storeSlice";
 import Paypal from "./Paypal";
 
 function CartTotalValue({ cart, history }) {
   const dispatch = useDispatch();
-  const paymentFee = useSelector((state) => state.store.paymentFee);
+  const deliveryFee = useSelector((state) => state.store.deliveryFee);
   const subTotalValue = cart
     .map((product) => product.total)
     .reduce((totalCart, totalProduct) => totalCart + totalProduct);
-  const totalValue = paymentFee + subTotalValue;
+  const totalValue = deliveryFee + subTotalValue;
 
   return (
     <div className="container">
@@ -29,12 +28,12 @@ function CartTotalValue({ cart, history }) {
             <strong>$ {subTotalValue}</strong>
           </h5>
           <h5>
-            <span className="text-title">tax: </span>
-            <strong>$ {paymentFee}</strong>
+            <span className="text-title">fee: </span>
+            <strong>$ {deliveryFee}</strong>
           </h5>
           <h4>
-            <span className="text-title">total value: </span>
-            <strong>$ {totalValue}</strong>
+            <strong className="text-title">total value: </strong>
+            <strong style={{ color: "var(--red)" }}>$ {totalValue}</strong>
           </h4>
           <Paypal
             totalValue={totalValue}

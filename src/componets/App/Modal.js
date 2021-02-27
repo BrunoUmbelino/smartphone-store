@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonContainer } from "./Button";
+import { SecondaryButton } from "./Button";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,21 +16,28 @@ function Modal() {
           <div className="row">
             <div
               id="modal"
-              className="col-8 col-md-6 col-lg-4 mx-auto text-center text-capitalize p-4"
+              className="col-6 col-md-4 col-lg-6 mx-auto text-center text-capitalize p-4"
             >
               <h5>item added to the cart</h5>
-              <img src={product.img} alt="product" className="img-fluid p-5" />
+              <img
+                src={product.img}
+                alt="product"
+                className="img-fluid p-2"
+                width="500"
+              />
               <h5>{product.title}</h5>
-              <h5 className="text-muted">price : ${product.price}</h5>
+              <h5 className="my-2 text-muted">
+                price : <span className="price">${product.price}</span>
+              </h5>
               <Link to="/">
-                <ButtonContainer onClick={() => dispatch(toggleModal())}>
+                <SecondaryButton onClick={() => dispatch(toggleModal())}>
                   Continue Shopping
-                </ButtonContainer>
+                </SecondaryButton>
               </Link>
               <Link to="/cart">
-                <ButtonContainer onClick={() => dispatch(toggleModal())}>
+                <SecondaryButton onClick={() => dispatch(toggleModal())}>
                   Go to Cart
-                </ButtonContainer>
+                </SecondaryButton>
               </Link>
             </div>
           </div>
@@ -52,8 +59,13 @@ const ModalContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  .price {
+    color: var(--red);
+  }
+
   #modal {
     background: white;
+    border-radius: 0.5rem;
   }
 `;
 

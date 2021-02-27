@@ -5,9 +5,6 @@ import { useSelector } from "react-redux";
 
 function ProductList() {
   const products = useSelector((state) => state.store.products);
-  const cart = useSelector((state) => state.store.cart);
-  console.log(products);
-  console.log(cart);
 
   return (
     <React.Fragment>
