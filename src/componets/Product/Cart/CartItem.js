@@ -52,9 +52,7 @@ function CartItem({ product }) {
       </div>
 
       <div className="CartItem__total col-10 mx-auto col-lg-2">
-        <strong>
-          item total : <span className="total">$ {product.total} </span>
-        </strong>
+        item total : <strong>$ {product.total} </strong>
       </div>
     </CartItemWrapper>
   );

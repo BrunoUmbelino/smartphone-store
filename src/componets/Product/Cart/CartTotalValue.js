@@ -24,17 +24,17 @@ function CartTotalValue({ cart, history }) {
           </button>
 
           <h5>
-            <span className="text-title">subtotal: </span>
+            <span>subtotal: </span>
             <strong>$ {subTotalValue}</strong>
           </h5>
           <h5>
-            <span className="text-title">fee: </span>
+            <span>fee: </span>
             <strong>$ {deliveryFee}</strong>
           </h5>
-          <h4>
-            <strong className="text-title">total value: </strong>
-            <strong style={{ color: "var(--red)" }}>$ {totalValue}</strong>
-          </h4>
+          <h3>
+            <span>total value: </span>
+            <strong> $ {totalValue}</strong>
+          </h3>
           <Paypal
             totalValue={totalValue}
             clearCart={() => dispatch(clearCart())}

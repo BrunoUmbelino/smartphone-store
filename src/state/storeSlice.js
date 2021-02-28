@@ -5,7 +5,7 @@ const initialState = {
   products: [...storeProducts],
   cart: [],
   currentProduct: {},
-  deliveryFee: 8.5,
+  deliveryFee: 8.51,
   modalOpen: false,
 };
 

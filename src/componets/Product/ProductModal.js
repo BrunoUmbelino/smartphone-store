@@ -16,14 +16,14 @@ function Modal() {
           <div className="row">
             <div
               id="modal"
-              className="col-6 col-md-4 col-lg-6 mx-auto text-center text-capitalize p-4"
+              className="col-6 col-md-4 col-lg-6 mx-auto text-center text-capitalize p-5"
             >
               <h5>item added to the cart</h5>
               <img
                 src={product.img}
                 alt="product"
                 className="img-fluid p-2"
-                width="500"
+                width="400"
               />
               <h5>{product.title}</h5>
               <h5 className="my-2 text-muted">
@@ -64,6 +64,7 @@ const ModalContainer = styled.div`
   }
 
   #modal {
+    width: 30vw;
     background: white;
     border-radius: 0.5rem;
   }

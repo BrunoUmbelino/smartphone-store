@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SecondaryButton } from "../Until/Button";
-import { addToCart } from "../../state/storeSlice";
+import { addToCart, toggleModal } from "../../state/storeSlice";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 
@@ -45,6 +45,7 @@ function ProductDetails() {
             disabled={inCart ? true : false}
             onClick={() => {
               dispatch(addToCart(id));
+              dispatch(toggleModal());
             }}
           >
             {inCart ? (
