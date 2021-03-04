@@ -1,10 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import {
   incrementProduct,
   decrementProduct,
   removeItem,
+  setCurrentProduct,
 } from "../../../state/storeSlice";
 
 function CartItem({ product }) {
@@ -13,7 +15,15 @@ function CartItem({ product }) {
   return (
     <CartItemWrapper className="CartItem row my-1 text-capitalize text-center mb-4">
       <div className="CartItem__img col-10 mx-auto col-lg-2">
-        <img src={product.img} alt="product" width="80" className="img-fluid" />
+        <Link to="/details">
+          <img
+            src={product.img}
+            alt="product"
+            width="80"
+            className="img-fluid"
+            onClick={() => dispatch(setCurrentProduct(product.id))}
+          />
+        </Link>
       </div>
 
       <div className="CartItem__product col-10 mx-auto col-lg-2">

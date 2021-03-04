@@ -21,7 +21,7 @@ function ProductDetails() {
       </div>
 
       <div className="row">
-        <div className="col-10 col-md-6 mx-auto my3 text-capitalize text-center">
+        <div className="col-10 col-md-6 mx-auto my-3 text-capitalize text-center">
           <img src={img} alt="product" className="img-fluid" width="300px" />
         </div>
 
