@@ -10,14 +10,14 @@ function Navbar() {
       <Link to="/">
         <img src={logo} alt="phone-store" className="navbar-brand" />
       </Link>
-      <ul className="navbar-nav align-items-center">
-        <li className="nav-item ml-3">
+      <ul className="navbar-nav align-items-center ml-auto">
+        <li className="nav-item">
           <Link to="/" className="nav-link">
             Products
           </Link>
         </li>
       </ul>
-      <Link to="/cart" className="ml-auto">
+      <Link to="/cart" className="ml-2">
         <PrimaryButton>
           <span className="mr-2">
             <i className="fas fa-cart-plus" />
