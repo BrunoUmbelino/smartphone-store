@@ -12,7 +12,7 @@ function Cart(props) {
   const cartEmpty = cart.length <= 0;
 
   return (
-    <div>
+    <div style={{ height: "90vh" }}>
       {cartEmpty ? (
         <EmptyCart />
       ) : (
