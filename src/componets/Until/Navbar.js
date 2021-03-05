@@ -58,9 +58,11 @@ function MyNavbar() {
 }
 
 const NavWrapper = styled.nav`
+  bottom: 0;
+  display: block;
+
   .navbar {
     background-color: var(--red);
-    height: ;
   }
 
   .navbar-dark .navbar-toggler {

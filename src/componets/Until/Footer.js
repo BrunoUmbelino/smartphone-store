@@ -10,14 +10,15 @@ function Footer() {
 }
 
 const FooterWrap = styled.footer`
-  background-color: var(--dark);
-  color: white;
+  background-color: var(--background);
+  color: black;
   text-align: center;
   padding-right: 2rem;
   bottom: 0;
   left: 0;
   right: 0;
   position: relative;
+  letter-spacing: 1px;
 `;
 
 export default Footer;

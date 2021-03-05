@@ -63,7 +63,7 @@ function ProductDetails() {
 }
 
 const ProductDetailsWrapper = styled.div`
-  height: 95vh;
+  min-height: 95vh;
   .Detail__price {
     font-size: "2rem";
     color: var(--red);

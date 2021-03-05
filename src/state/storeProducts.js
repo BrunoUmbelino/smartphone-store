@@ -111,6 +111,85 @@ const storeProducts = [
     count: 0,
     total: 0,
   },
+  {
+    id: 9,
+    title: "Samsung Galaxy S8",
+    model: "Total Wireless Samsung Galaxy S8+ 4G LTE Prepaid Smartphone ",
+    img: "img/galaxy-s8.jpg",
+    price: 479,
+    company: "SAMSUNG",
+    info: `
+         Infinity display: a bezel-less, full-frontal, edge-to-edge screen. Default resolution is full HD+ and can be changed to Quad HD+ (wqhd+) in settings
+    Camera resolution - front: 8 MP AF, rear: 12 MP OIS AF
+    Memory: Internal Memory 64 GB, RAM 4GB. Product Dimensions (inches)-2.89" x 6.28" x 0.32"(W x L x H)
+    Running on Android 7.0
+    Stay connected, wherever. Get the Nationwide coverage you need on America's largest, most dependable 4G LTE network.
+    Note: This phone is carrier locked. Customers must have had their locked device activated on TracFone service for no fewer than 12 months, redeemed air time cards in no fewer than 12 months, and not have had their telephone number recycled or ported.
+     
+  `,
+    inCart: false,
+    count: 0,
+    total: 0,
+  },
+  {
+    id: 10,
+    title: "ZTE Axon 10",
+    model:
+      "ZTE Axon 10 Pro Dual-SIM GSM 4G LTE GSM Snapdragon 855 Smartphone Unlocked 8GB RAM/256GB Blue",
+    img: "img/zte-axon-10.jpg",
+    price: 439,
+    company: "ZTE",
+    info: `
+    New ZTE Axon 10 Pro Dual-SIM 256GB Smartphone (Unlocked, 12GB RAM) ZTE Axon 10 Pro Specs Performance Operating System Android 9.0 Pie Memory 12 GB Chipset Qualcomm Snapdragon855 CPU 2.84 GHz Kryo 485 Single-Core 2.42 GHz Kryo 485 Triple-Core 1.78 GHz Kryo 485 Quad-Core GPU Adreno 640 Storage 256 GB Display Size 6.47" Native Resolution 2340 x 1080 Display Colors 16.0 Million Aspect Ratio 19.5:9 Pixel Density 398 ppi Display Technology OLED Input/Output Connectors Ports 1 x USB Type-C (USB 2.0) Speaker 1 x Down-Firing Flash Media Slot 1 x microSDXC SIM Card Slots 2 x Nano SIM Communications GSM 2G GSM, GPRS, EDGE: 850, 900, 1800, 1900 MHz GSM 3G/3.5G UMTS, HSPA+: 850, 900, 1700, 1900, 2100 MHz 4G LTE LTE: 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66, 71 Bands Wi-Fi Yes, Wi-Fi 5 (802.11ac) Bluetooth Bluetooth 5.0 + LE NFC Yes GPS Yes FM Radio No Rear Camera System Rear Camera Wide: 48 MP 1/2" Sensor with f/1.7 Lens Ultra Wide: 20 MP Sensor with 11mm f/2.2 Lens Telephoto: 8 MP Sensor with f/2.4 Lens Pixel Size Wide Angle: 0.8 µm Focus Type Wide Angle: Phase-Detect Autofocus Telephoto: Phase-Detect Autofocus Rear Camera Field of View Wide: 125° Rear Camera Flash 2 x LED Video Recording UHD 4K at up to 30 fps 1080p at up to 30 fps Front Camera System Front Camera Standard: 20 MP with f/2.0 Lens Video Recording 1080p at up to 30 fps General Biometric Authentication Face Scanner, Fingerprint Sensors Face ID, Fingerprint, Touch Water Resistance None Battery Internal Lithium-Ion (4000.0 mAh) Fast Charging Technology Qualcomm Quick Charge 4+ Wireless Charging Qi Dimensions (W x H x D) 2.9 x 6.3 x 0.3" / 73.4 x 159.2 x 7.9 mm Weight 6.17 oz / 175 g Packaging Info Package Weight 1.16 lb Box Dimensions (LxWxH) 7.2 x 3.8 x 2.5" Unit Condition: New Please note- important information: - This phone work with GSM networks only 
+  `,
+    inCart: false,
+    count: 0,
+    total: 0,
+  },
+  {
+    id: 11,
+    title: "LG V50",
+    model:
+      "LG V50 ThinQ 5G 128GB LM-V450 5G Smartphone (Black, Verizon Locked) ",
+    img: "img/lg-v50.jpg",
+    price: 499,
+    company: "LG",
+    info: `
+       6.4"* QHD+ OLED Display (3120 x 1440, including notch); 538 ppi
+    Qualcomm Snapdragon 855 Octa-core
+    5-Camera Phone (Triple Rear & Dual Front)
+    Internal Memory: 128GB | MicroSD Supports card up to 2 TB (cards sold separately) | RAM: 6GB
+    This Device is Currently Locked to Verizon
+
+  `,
+    inCart: false,
+    count: 0,
+    total: 0,
+  },
+  {
+    id: 12,
+    title: "Galaxy Note 20",
+    model:
+      "Samsung Electronics Galaxy Note 20 Ultra 5G Factory Unlocked Android Cell Phone | US Version | 128GB of Storage | Mobile Gaming Smartphone | Mystic Bronze (Renewed) ",
+    img: "img/galaxy-note-20.jpg",
+    price: 899,
+    company: "SAMSUNG",
+    info: `
+      S Pen & Samsung Notes: Pen precision meets PC power with S Pen & Samsung Notes; So responsive, it feels like you're using a real pen; Jot notes, sketch ideas, then convert into Microsoft Word or PowerPoint, save and sync across all your Galaxy devices
+    Trade-In With Samsung: Buy a new Samsung Galaxy Note 20 Ultra 5G and get up to $700 in Amazon credit with an eligible trade-in device through September 7, 2020.
+    Intelligent Battery & Super Fast Charge: Adaptive power that meets your needs with an all-day intelligent battery that learns from how you work and play to optimize battery life; Plus, Super Fast Charging boosts your battery in just minutes
+    Display & Gaming: The best Galaxy mobile gaming and display experience yet; With a breathtaking screen refresh rate, adaptive Dynamic AMOLED 2X display, Galaxy 5G support & advanced processor, you get a smooth gaming experience with virtually no lag
+    HyperFast Processor: Multitask with Samsung’s fastest Note processor yet; Hyperfast process speeds transform your gaming and bingeing with less interruption; Catch every idea, knockout work, score big and share all your moments without slowing down
+    Point to share: With point to share technology, you can share information directly with other compatible Samsung devices; Simply select the pictures, videos or documents you want to share, then point your Note20 at your friend's device and tap Share
+    Expandable Memory: Store all your hi-res photos and videos with expandable memory; Generous storage out of the box that can expand to fit your needs as work and life happen; Expandable up to 1TB with microSD card (sold separately)
+    Power of 5G: Get next-level power for everything you love to do with Samsung Galaxy 5G; Share more, game harder, experience more and never miss a beat
+
+
+  `,
+    inCart: false,
+    count: 0,
+    total: 0,
+  },
 ];
 
 export default storeProducts;
