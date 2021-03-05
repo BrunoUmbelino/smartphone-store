@@ -10,7 +10,7 @@ This project is a fictitious case with the objective of experience and learning 
 ### Technologies
 - React (Functional Components, Hooks, Styled Components)
 - Redux (Toolkit)
-- Bootstrap
+- Bootstrap (Reacstrap)
 - JavaScript ES6
 - HTML 5
 - CSS 3
