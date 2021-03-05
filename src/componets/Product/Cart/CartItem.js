@@ -40,14 +40,14 @@ function CartItem({ product }) {
             className="btn-black mx-1"
             onClick={() => dispatch(decrementProduct(product.id))}
           >
-            <i class="fas fa-minus"></i>
+            <i className="fas fa-minus"></i>
           </span>
           <span className="count mx-1">{product.count}</span>
           <span
             className="btn-black mx-1"
             onClick={() => dispatch(incrementProduct(product.id))}
           >
-            <i class="fas fa-plus"></i>
+            <i className="fas fa-plus"></i>
           </span>
         </div>
       </div>

@@ -12,6 +12,7 @@ import {
   Navbar,
   NavbarText,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function MyNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,19 +37,19 @@ function MyNavbar() {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto align-items-center" navbar>
             <NavItem>
-              <NavLink href="/">
+              <Link to="/" className="nav-link">
                 <span className="navlink-product">Products</span>
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/cart">
+              <Link to="/cart">
                 <PrimaryButton>
                   <span className="mr-2">
                     <i className="fas fa-cart-plus" />
                   </span>
                   My cart
                 </PrimaryButton>
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>
