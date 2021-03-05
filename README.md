@@ -2,13 +2,13 @@
 link: https://smartphone-store.netlify.app
 
 ### Description
-A simple and elegant mobile phone store.
+SmartStore is a smartphone E-commerce, simple, elegant, responsive and integrated with the PayPal SandBox payments API. 
 
 ### Motivation 
-This project is a fictional virtual store, with the purpose of learning the technologies used.
+This project is a fictitious case with the objective of experience and learning in the technologies used.
 
 ### Technologies
-- React (Functional Components, Styled Components)
+- React (Functional Components, Hooks, Styled Components)
 - Redux (Toolkit)
 - Bootstrap
 - JavaScript ES6
