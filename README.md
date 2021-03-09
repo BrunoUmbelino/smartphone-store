@@ -2,7 +2,7 @@
 link: https://smartphone-store.netlify.app
 
 ### Description
-SmartStore is a smartphone E-commerce, simple, elegant, responsive and integrated with the PayPal SandBox payments API. 
+Smart Store is an e-commerce for selling mobile phones, simple, elegant, responsive and integrated with the PayPal SandBox payment system.  
 
 ### Motivation 
 This project is a fictitious case with the objective of experience and learning in the technologies used.
