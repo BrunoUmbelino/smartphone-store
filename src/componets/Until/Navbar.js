@@ -1,21 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { PrimaryButton } from "./Button";
 import logo from "../../icon.png";
-import {
-  Collapse,
-  Nav,
-  NavbarBrand,
-  NavbarToggler,
-  NavItem,
-  NavLink,
-  Navbar,
-  NavbarText,
-} from "reactstrap";
+import { Collapse, Nav, NavbarBrand, NavbarToggler, Navbar } from "reactstrap";
 import { Link } from "react-router-dom";
+import { ImMenu3, ImMenu4 } from "react-icons/im";
+import { useSelector } from "react-redux";
 
 function MyNavbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const cartNumItems = useSelector((state) => state.store.cart.length);
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -29,26 +22,29 @@ function MyNavbar() {
       >
         <NavbarBrand href="/">
           <img src={logo} alt="phone-store" />
+          <span className="ml-3">Smart Store</span>
         </NavbarBrand>
-        <NavbarText>Smart Store</NavbarText>
 
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle}>
+          {isOpen ? <ImMenu4 /> : <ImMenu3 />}
+        </NavbarToggler>
 
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto align-items-center" navbar>
+          <Nav
+            className="ml-auto align-items-center justify-content-center"
+            navbar
+          >
             <NavItem>
-              <Link to="/" className="nav-link">
-                <span className="navlink-product">Products</span>
+              <Link to="/">
+                <span>Products</span>
               </Link>
             </NavItem>
             <NavItem>
               <Link to="/cart">
-                <PrimaryButton>
-                  <span className="mr-2">
-                    <i className="fas fa-cart-plus" />
-                  </span>
-                  My cart
-                </PrimaryButton>
+                <i className="fas fa-cart-plus" />
+                <span className="ml-1">
+                  <small className="cart-num-items">{cartNumItems}</small>
+                </span>
               </Link>
             </NavItem>
           </Nav>
@@ -59,40 +55,61 @@ function MyNavbar() {
 }
 
 const NavWrapper = styled.nav`
-  bottom: 0;
-  display: block;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  background-color: var(--red);
 
   .navbar {
-    background-color: var(--red);
+    width: 80%;
+    margin: auto;
   }
 
-  .navbar-dark .navbar-toggler {
-    border: 2px solid white;
-    background-color: #bd200f;
+  .navbar-toggler {
+    padding: 0;
     border-radius: 5px;
-  }
-
-  .navbar-text {
-    color: white;
+    color: var(--white);
     font-size: 2rem;
+
+    &:focus,
+    &:visited {
+      margin: none;
+    }
   }
 
-  .navbar-brand img {
-    height: 60px;
-    background: linear-gradient(120deg, var(--green), var(--blue));
-    border-radius: 8px;
-    padding: 5px 0px;
+  .navbar-brand {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    & > img {
+      height: 50px;
+      background: linear-gradient(120deg, var(--green), var(--blue));
+      border-radius: 8px;
+      padding: 5px 0px;
+      margin: 5px 0px;
+    }
+  }
+`;
+
+const NavItem = styled.div`
+  margin: 0px 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: black;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 763px) {
+    margin-bottom: 1rem;
   }
 
-  .navlink-product {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: white;
-    text-transform: capitalize;
-    transition: all 0.3s ease-in-out;
-
+  & > a {
+    color: var(--white);
+    padding: 0 8px;
     &:hover {
-      color: black;
+      text-decoration: none;
+      border-bottom: white 2px solid;
     }
   }
 `;

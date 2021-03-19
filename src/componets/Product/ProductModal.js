@@ -22,23 +22,25 @@ function Modal() {
               <img
                 src={product.img}
                 alt="product"
-                className="img-fluid p-2"
+                className="img-fluid"
                 width="300px"
               />
               <h5>{product.title}</h5>
               <h5 className="my-2 text-muted">
                 price : <span className="price">${product.price}</span>
               </h5>
-              <Link to="/">
-                <SecondaryButton onClick={() => dispatch(toggleModal())}>
-                  Continue Shopping
-                </SecondaryButton>
-              </Link>
-              <Link to="/cart">
-                <SecondaryButton onClick={() => dispatch(toggleModal())}>
-                  Go to Cart
-                </SecondaryButton>
-              </Link>
+              <div className="modal-btns">
+                <Link to="/">
+                  <ModalBtn onClick={() => dispatch(toggleModal())}>
+                    Continue Shopping
+                  </ModalBtn>
+                </Link>
+                <Link to="/cart">
+                  <ModalBtn onClick={() => dispatch(toggleModal())}>
+                    Go to Cart
+                  </ModalBtn>
+                </Link>
+              </div>
             </div>
           </div>
         </ModalContainer>
@@ -63,17 +65,35 @@ const ModalContainer = styled.div`
     color: var(--red);
   }
 
-  @media (min-width: 600px) {
+  @media screen and (max-width: 600px) {
     #modal {
-      width: 30vw;
+      max-width: 70vw;
+      max-height: 100vh;
+
+      & > img {
+        width: 80%;
+        padding: 2rem;
+      }
     }
   }
 
   #modal {
-    max-width: 50vw;
+    img {
+      width: 50%;
+      padding: 2rem;
+    }
+    width: 40vw;
     background: white;
     border-radius: 0.5rem;
   }
+
+  .modal-btns {
+    margin-top: 1rem;
+  }
+`;
+
+const ModalBtn = styled(SecondaryButton)`
+  width: 80%;
 `;
 
 export default Modal;
