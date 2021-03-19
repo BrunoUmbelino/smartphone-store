@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export default function Title({ children }) {
   return (
-    <TitleWrap className="row">
+    <TitleWrap className="row" dataid="title">
       <div className="col-10 mx-auto my-2 text-title text-center">
         <h1>{children}</h1>
       </div>
