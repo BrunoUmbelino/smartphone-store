@@ -6,6 +6,7 @@ import EmptyCart from "./EmptyCart";
 import CartList from "./CartList";
 import { useSelector } from "react-redux";
 import CartTotalValue from "./CartTotalValue";
+import { Container } from "reactstrap";
 
 function Cart(props) {
   const cart = useSelector((state) => state.store.cart);
@@ -16,7 +17,7 @@ function Cart(props) {
       {cartEmpty ? (
         <EmptyCart />
       ) : (
-        <React.Fragment>
+        <Container>
           <div className="pt-2 pb-4">
             <Title>Cart</Title>
           </div>
@@ -24,7 +25,7 @@ function Cart(props) {
           <CartCollums />
           <CartList cart={cart} />
           <CartTotalValue cart={cart} history={props.history} />
-        </React.Fragment>
+        </Container>
       )}
     </div>
   );
