@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "./Product";
-import Title from "../Until/Title";
+import Title from "../General/Title";
 import { useSelector } from "react-redux";
 
 function ProductList() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SecondaryButton } from "../Until/Button";
+import { SecondaryButton } from "../General/Button";
 import { addToCart, toggleModal } from "../../state/storeSlice";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";

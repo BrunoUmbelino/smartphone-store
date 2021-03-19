@@ -7,7 +7,7 @@ import {
   decrementProduct,
   removeItem,
   setCurrentProduct,
-} from "../../../state/storeSlice";
+} from "../../state/storeSlice";
 
 function CartItem({ product }) {
   const dispatch = useDispatch();

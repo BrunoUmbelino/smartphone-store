@@ -1,5 +1,5 @@
 import React from "react";
-import { SecondaryButton } from "../Until/Button";
+import { SecondaryButton } from "../General/Button";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";

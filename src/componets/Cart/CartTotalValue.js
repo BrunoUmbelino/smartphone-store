@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart } from "../../../state/storeSlice";
+import { clearCart } from "../../state/storeSlice";
 import Paypal from "./Paypal";
 
 function CartTotalValue({ cart, history }) {
