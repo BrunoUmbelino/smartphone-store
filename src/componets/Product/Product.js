@@ -15,18 +15,17 @@ function Product(props) {
 
   return (
     <ProductWrapper
-      className="col-9 col-sm-6 col-md9 col-lg-3  my-3 mx-auto"
+      className="col-9 col-sm-6 col-md-9 col-lg-3  my-3 mx-auto"
       inCart={inCart}
     >
       <div className="card">
-        <div className="card__img-container text-center p-5">
+        <div className="card__img-container text-center p-4">
           <Link to="/details">
             <img
               src={img}
               alt="product"
-              className="card__img p-3"
+              className="card__img img-container py-4"
               onClick={() => dispatch(setCurrentProduct(id))}
-              height="250px"
             />
           </Link>
           <button
@@ -81,6 +80,10 @@ const ProductWrapper = styled.div`
   .card__img-container {
     position: relative;
     overflow: hidden;
+
+    .card__img {
+      height: 20rem;
+    }
 
     &:hover .card__img {
       transition: all 0.5s linear;

@@ -13,16 +13,16 @@ function ProductDetails() {
   const dispatch = useDispatch();
 
   return (
-    <ProductDetailsWrapper className="Detail container py-3">
+    <ProductDetailsWrapper className="detail container py-3">
       <div className="row">
-        <div className="col-10 text-center my-5 mx-auto">
+        <div className="col-10 text-center mx-auto py-4">
           <h1>{title}</h1>
         </div>
       </div>
 
       <div className="row">
         <div className="col-10 col-md-6 mx-auto my-3 text-capitalize text-center">
-          <img src={img} alt="product" className="img-fluid" width="300px" />
+          <img src={img} alt="product" className="detail__img" />
         </div>
 
         <div className="col-10 mx-auto col-md-6 my3 text-capitalize">
@@ -63,7 +63,18 @@ function ProductDetails() {
 }
 
 const ProductDetailsWrapper = styled.div`
-  min-height: 95vh;
+  @media screen and (max-width: 900px) {
+    font-size: 14px;
+
+    .detail__img {
+      height: 40vh;
+    }
+  }
+
+  .detail__img {
+    max-height: 60vh;
+  }
+
   .Detail__price {
     font-size: "2rem";
     color: var(--red);

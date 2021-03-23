@@ -4,7 +4,7 @@ const storeProducts = [
     title: "Samsung Galaxy S20",
     model:
       "Samsung Galaxy S20 FE 5G | Factory Unlocked Android Cell Phone | 128 GB | US Version Smartphone | Pro-Grade Camera, 30X Space Zoom, Night Mode | Cloud Navy ",
-    img: "img/samsung-galaxy-s20.jpg",
+    img: "img/samsung-galaxy-s20.PNG",
     price: 599,
     company: "Samsung",
     info:
@@ -18,7 +18,7 @@ const storeProducts = [
     title: "OnePlus Nord N10",
     model:
       "OnePlus Nord N10 5G Unlocked Smartphone, Midnight Ice​, 90Hz Refresh Rate, 6GB RAM + 128GB storage, US Version, Model BE2026 ",
-    img: "img/onePlus-nord.jpg",
+    img: "img/onePlus-nord.png",
     price: 299,
     company: "OnePlus",
     info:
@@ -32,7 +32,7 @@ const storeProducts = [
     title: "Moto G Power",
     model:
       "Moto G Power | 2021 | 3-Day Battery | Unlocked | Made for US by Motorola | 3/32GB | 48MP Camera | Silver",
-    img: "img/moto-g-power.jpg",
+    img: "img/moto-g-power.png",
     price: 199,
     company: "Motorola",
     info:
@@ -46,7 +46,7 @@ const storeProducts = [
     title: "TCL 10L",
     model:
       'TCL 10L, Unlocked Android Smartphone with 6.53" FHD + LCD Display, 48MP Quad Rear Camera System, 64GB+6GB RAM, 4000mAh Battery - Arctic White ',
-    img: "img/tlc-10l.jpg",
+    img: "img/tlc-10l.png",
     price: 249,
     company: "TLC",
     info:
@@ -60,7 +60,7 @@ const storeProducts = [
     title: "Samsung Galaxy A12",
     model:
       "Samsung Galaxy A12 (A125M) 64GB Dual SIM, GSM Unlocked, (CDMA Verizon/Sprint Not Supported) Smartphone Latin American Version No Warranty (Black)",
-    img: "img/samsung-galaxy-a12.jpg",
+    img: "img/samsung-galaxy-a12.png",
     price: 179,
     company: "Samsung",
     info:
@@ -74,7 +74,7 @@ const storeProducts = [
     title: "Google Pixel 4a",
     model:
       "Google Pixel 4a - New Unlocked Android Smartphone - 128 GB of Storage - Up to 24 Hour Battery - Just Black",
-    img: "img/google-pixel-4a.jpg",
+    img: "img/google-pixel-4a.png",
     price: 408,
     company: "apple",
     info:
@@ -88,7 +88,7 @@ const storeProducts = [
     title: "Xiaomi Redmi Note 9",
     model:
       'Xiaomi Redmi Note 9 Pro 128GB + 6GB RAM, 6.67" FHD+ DotDisplay, 64MP AI Quad Camera, Qualcomm Snapdragon 720G LTE Factory Unlocked Smartphone - International Version (Interstellar Grey)',
-    img: "img/xiaomi-redmi-note9.jpg",
+    img: "img/xiaomi-redmi-note9.png",
     price: 278,
     company: "Xiaomi",
     info:
@@ -102,7 +102,7 @@ const storeProducts = [
     title: "Samsung Galaxy A50",
     model:
       "Simple Mobile Carrier-Locked Samsung Galaxy A50 4G LTE Prepaid Smartphone - Black - 64GB - Sim Card Included - GSM",
-    img: "img/samsung-galaxy-a50.jpg",
+    img: "img/samsung-galaxy-a50.png",
     price: 179,
     company: "Simple Mobile",
     info:
@@ -115,7 +115,7 @@ const storeProducts = [
     id: 9,
     title: "Samsung Galaxy S8",
     model: "Total Wireless Samsung Galaxy S8+ 4G LTE Prepaid Smartphone ",
-    img: "img/galaxy-s8.jpg",
+    img: "img/galaxy-s8.png",
     price: 479,
     company: "SAMSUNG",
     info: `
@@ -136,11 +136,11 @@ const storeProducts = [
     title: "ZTE Axon 10",
     model:
       "ZTE Axon 10 Pro Dual-SIM GSM 4G LTE GSM Snapdragon 855 Smartphone Unlocked 8GB RAM/256GB Blue",
-    img: "img/zte-axon-10.jpg",
+    img: "img/zte-axon-10.png",
     price: 439,
     company: "ZTE",
     info: `
-    New ZTE Axon 10 Pro Dual-SIM 256GB Smartphone (Unlocked, 12GB RAM) ZTE Axon 10 Pro Specs Performance Operating System Android 9.0 Pie Memory 12 GB Chipset Qualcomm Snapdragon855 CPU 2.84 GHz Kryo 485 Single-Core 2.42 GHz Kryo 485 Triple-Core 1.78 GHz Kryo 485 Quad-Core GPU Adreno 640 Storage 256 GB Display Size 6.47" Native Resolution 2340 x 1080 Display Colors 16.0 Million Aspect Ratio 19.5:9 Pixel Density 398 ppi Display Technology OLED Input/Output Connectors Ports 1 x USB Type-C (USB 2.0) Speaker 1 x Down-Firing Flash Media Slot 1 x microSDXC SIM Card Slots 2 x Nano SIM Communications GSM 2G GSM, GPRS, EDGE: 850, 900, 1800, 1900 MHz GSM 3G/3.5G UMTS, HSPA+: 850, 900, 1700, 1900, 2100 MHz 4G LTE LTE: 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66, 71 Bands Wi-Fi Yes, Wi-Fi 5 (802.11ac) Bluetooth Bluetooth 5.0 + LE NFC Yes GPS Yes FM Radio No Rear Camera System Rear Camera Wide: 48 MP 1/2" Sensor with f/1.7 Lens Ultra Wide: 20 MP Sensor with 11mm f/2.2 Lens Telephoto: 8 MP Sensor with f/2.4 Lens Pixel Size Wide Angle: 0.8 µm Focus Type Wide Angle: Phase-Detect Autofocus Telephoto: Phase-Detect Autofocus Rear Camera Field of View Wide: 125° Rear Camera Flash 2 x LED Video Recording UHD 4K at up to 30 fps 1080p at up to 30 fps Front Camera System Front Camera Standard: 20 MP with f/2.0 Lens Video Recording 1080p at up to 30 fps General Biometric Authentication Face Scanner. 
+    New ZTE Axon 10 Pro Dual-SIM 256GB Smartphone (Unlocked, 12GB RAM) ZTE Axon 10 Pro Specs Performance Operating System Android 9.0 Pie Memory 12 GB Chipset Qualcomm Snapdragon855 CPU 2.84 GHz Kryo 485 Single-Core 2.42 GHz Kryo 485 Triple-Core 1.78 GHz Kryo 485 Quad-Core GPU Adreno 640 Storage 256 GB Display Size 6.47" Native Resolution 2340 x 1080 Display Colors 16.0 Million Aspect Ratio 19.5:9 Pixel Density 398 ppi Display Technology OLED Input/Output Connectors Ports 1 x USB Type-C (USB 2.0) Speaker 1 x Down-Firing Flash Media Slot 1 x microSDXC SIM Card Slots 2 x Nano SIM Communications GSM 2G GSM, GPRS, EDGE: 850, 900, 1800, 1900 MHz GSM 3G/3.5G UMTS, HSPA+: 850, 900, 1700, 1900, 2100 MHz 4G LTE LTE: 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66, 71 Bands Wi-Fi Yes, Wi-Fi 5 (802.11ac) Bluetooth Bluetooth 5.0 + LE NFC Yes GPS Yes FM Radio No Rear Camera System Rear Camera Wide: 48 MP 1/2". 
   `,
     inCart: false,
     count: 0,
@@ -151,7 +151,7 @@ const storeProducts = [
     title: "LG V50",
     model:
       "LG V50 ThinQ 5G 128GB LM-V450 5G Smartphone (Black, Verizon Locked) ",
-    img: "img/lg-v50.jpg",
+    img: "img/lg-v50.png",
     price: 499,
     company: "LG",
     info: `
@@ -171,7 +171,7 @@ const storeProducts = [
     title: "Galaxy Note 20",
     model:
       "Samsung Electronics Galaxy Note 20 Ultra 5G Factory Unlocked Android Cell Phone | US Version | 128GB of Storage | Mobile Gaming Smartphone | Mystic Bronze (Renewed) ",
-    img: "img/galaxy-note-20.jpg",
+    img: "img/galaxy-note-20.png",
     price: 899,
     company: "SAMSUNG",
     info: `
