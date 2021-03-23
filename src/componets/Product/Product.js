@@ -15,7 +15,7 @@ function Product(props) {
 
   return (
     <ProductWrapper
-      className="col-10 col-sm-6 col-md-6 col-lg-3  my-3 mx-auto"
+      className="col-9 col-sm-6 col-md9 col-lg-3  my-3 mx-auto"
       inCart={inCart}
     >
       <div className="card">
@@ -25,8 +25,8 @@ function Product(props) {
               src={img}
               alt="product"
               className="card__img p-3"
-              height="250"
               onClick={() => dispatch(setCurrentProduct(id))}
+              height="250px"
             />
           </Link>
           <button

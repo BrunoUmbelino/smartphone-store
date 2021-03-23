@@ -20,10 +20,12 @@ function MyNavbar() {
         expand="md"
         className="align-content-center my-0 py-0"
       >
-        <NavbarBrand href="/">
-          <img src={logo} alt="phone-store" />
-          <span className="ml-3">Smart Store</span>
-        </NavbarBrand>
+        <Link to="/">
+          <NavbarBrand>
+            <img src={logo} alt="phone-store" />
+            <span className="ml-3">Smart Store</span>
+          </NavbarBrand>
+        </Link>
 
         <NavbarToggler onClick={toggle}>
           {isOpen ? <ImMenu4 /> : <ImMenu3 />}
@@ -55,9 +57,13 @@ function MyNavbar() {
 }
 
 const NavWrapper = styled.nav`
+  a {
+    text-decoration: none;
+  }
+
   top: 0;
   position: sticky;
-  z-index: 1;
+  z-index: 10;
   background-color: var(--red);
 
   .navbar {
@@ -108,7 +114,6 @@ const NavItem = styled.div`
     color: var(--white);
     padding: 0 8px;
     &:hover {
-      text-decoration: none;
       border-bottom: white 2px solid;
     }
   }

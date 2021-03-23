@@ -11,13 +11,11 @@ function Footer() {
 
 const FooterWrap = styled.footer`
   background-color: var(--background);
+  position: relative;
+  bottom: 0;
   color: black;
   text-align: center;
   padding-right: 2rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: relative;
   letter-spacing: 1px;
 `;
 
