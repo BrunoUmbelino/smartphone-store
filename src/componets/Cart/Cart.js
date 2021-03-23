@@ -7,13 +7,14 @@ import CartList from "./CartList";
 import { useSelector } from "react-redux";
 import CartTotalValue from "./CartTotalValue";
 import { Container } from "reactstrap";
+import styled from "styled-components";
 
 function Cart(props) {
   const cart = useSelector((state) => state.store.cart);
   const cartEmpty = cart.length <= 0;
 
   return (
-    <div style={{ height: "90vh" }}>
+    <CartWrapper>
       {cartEmpty ? (
         <EmptyCart />
       ) : (
@@ -27,8 +28,12 @@ function Cart(props) {
           <CartTotalValue cart={cart} history={props.history} />
         </Container>
       )}
-    </div>
+    </CartWrapper>
   );
 }
+
+const CartWrapper = styled.div`
+  min-height: 75vh;
+`;
 
 export default Cart;

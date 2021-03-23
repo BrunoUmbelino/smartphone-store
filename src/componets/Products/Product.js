@@ -15,11 +15,11 @@ function Product(props) {
 
   return (
     <ProductWrapper
-      className="col-9 col-sm-6 col-md-9 col-lg-3  my-3 mx-auto"
+      className="col-9 col-sm-6 col-md-4 col-lg-3  my-3 mx-auto"
       inCart={inCart}
     >
       <div className="card">
-        <div className="card__img-container text-center p-4">
+        <div className="card__img-container text-center p-5">
           <Link to="/details">
             <img
               src={img}
