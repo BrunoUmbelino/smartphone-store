@@ -1,5 +1,5 @@
 # Smart Store
-link: https://smart-store.netlify.app
+Site: https://smart-store.netlify.app
 
 ### Description
 Smart Store is an e-commerce for selling mobile phones, simple, elegant, responsive and integrated with the PayPal SandBox payment system.  
