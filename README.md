@@ -7,8 +7,9 @@ Smart Store is an e-commerce for selling mobile phones, simple, elegant, respons
 This project is a fictional case with the objective of learning.
 
 ### Technologies
-- React (Functional Components, Hooks, Styled Components)
+- React (Functional Components, Hooks)
 - Redux (Toolkit)
+- Styled Components
 - Bootstrap (Reacstrap)
 - JavaScript ES6
 - HTML 5
