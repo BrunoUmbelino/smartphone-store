@@ -1,15 +1,15 @@
 # Smart Store
-link: https://smart-store.netlify.app
+Site: https://smart-store.netlify.app
 
 ### Description
 Smart Store is an e-commerce for selling mobile phones, simple, elegant, responsive and integrated with the PayPal SandBox payment system.  
 
-### Motivation 
-This project is a fictitious case with the objective of experience and learning in the technologies used.
+This project is a fictional case with the objective of learning.
 
 ### Technologies
-- React (Functional Components, Hooks, Styled Components)
+- React (Functional Components, Hooks)
 - Redux (Toolkit)
+- Styled Components
 - Bootstrap (Reacstrap)
 - JavaScript ES6
 - HTML 5
