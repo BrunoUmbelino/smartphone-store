@@ -9,7 +9,7 @@ function ProductList() {
 
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container mb-5 pb-5">
         <Title>promotions</Title>
         <div className="row justify-content-center">
           <Promotions />

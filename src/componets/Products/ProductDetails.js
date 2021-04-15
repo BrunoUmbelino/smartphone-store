@@ -15,9 +15,7 @@ function ProductDetails() {
   return (
     <ProductDetailsWrapper className="detail container py-3">
       <div className="row">
-        <div className="col-10 text-center mx-auto py-4">
-          <h1>{title}</h1>
-        </div>
+        <h1>{title}</h1>
       </div>
 
       <div className="row">
@@ -63,6 +61,17 @@ function ProductDetails() {
 }
 
 const ProductDetailsWrapper = styled.div`
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    margin: 3rem;
+  }
+
   @media screen and (max-width: 900px) {
     font-size: 14px;
 

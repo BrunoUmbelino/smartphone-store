@@ -24,7 +24,7 @@ function Product(props) {
             <img
               src={img}
               alt="product"
-              className="card__img img-container py-4"
+              className="card__img img-container py-5"
               onClick={() => dispatch(setCurrentProduct(id))}
             />
           </Link>

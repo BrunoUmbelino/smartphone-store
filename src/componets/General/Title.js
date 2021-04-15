@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Title({ children }) {
   return (
     <TitleWrap className="row" dataid="title">
-      <div className="col-10 mx-auto my-3 text-title text-center">
+      <div className="col-10 mx-auto my-3 text-title text-center py-4">
         {children}
       </div>
     </TitleWrap>

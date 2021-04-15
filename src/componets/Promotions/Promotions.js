@@ -5,8 +5,9 @@ import {
   CarouselControl,
   CarouselIndicators,
 } from "reactstrap";
-import promo1 from "./promo1.png";
-import promo2 from "./promo2.png";
+import styled from "styled-components";
+import promo1 from "./promo1.jpg";
+import promo2 from "./promo2.jpg";
 import promo3 from "./promo3.png";
 
 const items = [
@@ -55,7 +56,7 @@ const Example = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} className="img-fluid" />
+        <CarouselImg src={item.src} alt={item.altText} className="img-fluid" />
       </CarouselItem>
     );
   });
@@ -81,5 +82,13 @@ const Example = (props) => {
     </Carousel>
   );
 };
+
+const CarouselImg = styled.img`
+  height: 200px;
+
+  @media screen and (min-width: 500px) {
+    height: 450px;
+  }
+`;
 
 export default Example;

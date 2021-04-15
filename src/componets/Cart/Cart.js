@@ -33,7 +33,7 @@ function Cart(props) {
 }
 
 const CartWrapper = styled.div`
-  min-height: 75vh;
+  min-height: calc(100vh - 120px);
 `;
 
 export default Cart;
