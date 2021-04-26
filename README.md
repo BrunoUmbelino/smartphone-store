@@ -14,4 +14,4 @@ This project is a fictional case with the objective of learning.
 - JavaScript ES6
 - HTML 5
 - CSS 3
-- React-paypal-express-checkout (payment feature)
+- React-paypal-express-checkout (payment feature) 
